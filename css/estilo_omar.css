@@ -1,0 +1,325 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+/* header{
+  background: pink;
+  color: red
+} */
+
+/* selector de etiqueta: header, section, articule, nav, etc */
+/* selector descendente:
+body header div nav ol li a */
+
+/* selector de clase */
+/* .link */
+
+/* /* selector de id # */
+/* #portafolio_audiovisual */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  /* font-style: italic;  */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  color: white;
+  /* margin: 100px 100px 70px 30px; */
+  /* text-transform: uppercase; */
+  /* text-transform: capitalize; */
+}
+h1 strong{
+  color: #8cc63f;
+}
+h2  {
+  color: #8cc63f;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.hero{
+  height: 300px;
+  /* border: 1px solid red; */
+  /* background-image: url('../../Omar_Alvarez/FOTOS_ESTUDIO/omar_10.jpg'); */
+  /* background-size: 500px 300px ;
+  background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-title{
+  /* border: 1px solid red; */
+  width: 500px;
+}
+.hero-image{
+  /* border: 1px solid red; */
+  object-fit: cover;
+}
+.projectDeporte-image{
+  object-fit: cover;
+}
+.projectDistrito-image{
+  object-fit: cover;
+}
+.portfolio_audiovisual {
+  background: #fafafa;
+  padding: 20px;
+  margin: 20px 40px 40px 40px;
+}
+.portafolio-portafolio{
+  margin: 20px 0 0 0;
+}
+
+.project{
+  /* border-top:10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+  /* border-top-color: red */
+  /* border-color: red;
+  border-width: 15px;
+  border-style: solid; */
+  border: 1px solid grey;
+  border-radius: 10px;
+  /* margin: 10px; */
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-title{
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.project-work,
+.project-implements,
+.proyect-event,
+.project-date,
+.project-place
+{
+  margin: 10px 0;
+}
+
+.project-description{
+  font-size: 20px;
+  margin: 20px 20px 20px 0;
+}
+.project strong{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+}
+.project-details{
+  width: 500px;
+}
+.projecDistrito-imageContainer{
+  width: 500px
+}
+.projectDistrito-image{
+  object-fit: cover;
+}
+.projectViajes-imageContainer{
+  width: 500px;
+}
+.projectViajes-image{
+  object-fit: cover;
+}
+.projectDJ-imageContainer{
+  width: 500px;
+}
+.header{
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  height: inherit;
+}
+.header ol{
+  display: flex;
+  height: inherit;
+}
+.header ol li{
+  height: inherit;
+}
+.header a{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+figure{
+  margin: 0;
+}
+.header figure{
+  vertical-align: middle;
+  }
+
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  justify-content: space-between ;
+}
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+.footer p{
+  margin: 20px 10px;
+}
+.footer img{
+vertical-align: middle
+}
+
+.experience{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px 40px 40px 40px;
+  background: #fafafa;
+}
+.diplomas {
+  margin: 10px;
+  overflow: hidden;
+}
+.diplomas-title{
+  text-decoration: none;
+}
+.diplomas img{
+  width: 450px;
+  object-fit: cover;
+}
+.diplomas-figure{
+  display: flex;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  background: white;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.diplomas figure{
+  margin: 10px;
+}
+.diplomas-text{
+  text-align: right;
+  text-align: bottom;
+  margin: 10px 0 10px 10px;
+}
+.diplomas-text a{
+  text-decoration: none;
+  border: 1px solid #1b2127;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: #1b2127;
+}
+
+
+.contact{
+  background-color: #1b2127;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+
+.social-link.twitter{
+  background-image: url('../Omar_Alvarez/Image_portafolio/twitter.svg');
+}
+.social-link.facebook{
+  background-image: url('../Omar_Alvarez/Image_portafolio/facebook.svg');
+}
+.social-link.youtube{
+  background-image: url('../Omar_Alvarez/Image_portafolio/youtube.png');
+}
+.social-link.instagram{
+  background-image: url('../Omar_Alvarez/Image_portafolio/instagram.png');
+}
+.social-link.github{
+  background-image: url('../Omar_Alvarez/Image_portafolio/github.png')
+}
+
+.form-email input{
+  border-color: gray;
+  padding: 10px 20px 10px 25px;
+  border-style: solid;
+  border-radius: 5px;
+  background-image: url('../../Omar_Alvarez/Image_portafolio/mail.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button{
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+  /* margin: 10px auto 0; */
+}
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.form-email{
+  margin: 0 10px;
+}
+.container{
+  /* border: 1px solid red; */
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+  flex-direction: inherit;
+}
