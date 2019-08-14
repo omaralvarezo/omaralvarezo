@@ -5,7 +5,9 @@
     <title>Omar Alvarez</title> 
     <link rel="icon" type="image/png" href="Favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo_omar.css">
+    <link rel="stylesheet" href="css/estilo_omar.css"/>
+    <!-- Los media queries se puede realizar en otra carpeta dentro css, dentro de la misma hoja de estilos o dentro de html con el tag <style> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- <style>
       header{
         background: green;
@@ -13,10 +15,11 @@
     </style> -->
   </head>
   <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="container">
           <figure class="logo">
-              <img src="Omar_Alvarez/Brand/OA_MainLogo.png" height="60" width="100">
+              <img src="Omar_Alvarez/Brand/OA_MainLogo.png" height="60" width="100" class="oalogo">
             </figure>
           <nav class="menu">
           <ol>
@@ -25,6 +28,9 @@
             </li> -->
             <li>
               <a class="link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="link" href="#videos">Videos</a>
             </li>
             <li>
                 <a class="link" href="#experiencia">Experiencia</a>
@@ -56,7 +62,7 @@
                 <p class="project-implements"><small><strong>Implementos: </strong>Final Cut Pro X / Sony alpha 6300</small></p>
                 <p class="project-description"><small><strong>Descripción: </strong>Este proyecto consistió en realizar fotos y videos cinematográficos sobre la experiancia que se vivía en el box y presentar el entorno de entrenamiento.</small></p>
               </div>
-                <figure class="projectDistrito-imageContainer">
+                <figure class="project-imageContainer">
                     <a href="https://www.instagram.com/p/ByguZ38A4B-/" target="_blank"><img class="projectDistrito-image" src="../Omar_Alvarez/Distrito/distrito.jpg" alt="Imagen Distrito" width="500" height="300"></a>
                 </figure>
             </article>
@@ -67,7 +73,7 @@
                 <p class="project-implements"><small><strong>Implementos: </strong>Final Cut Pro X / Sony alpha 6300 / DJI Mavic Pro</small></p>
                 <p class="project-description"><small><strong>Descripción: </strong>Mi idea es documentar por medio de video los lugares los cuales visito y contar una historia entorno a este que logre llamar la atención de la gente con el objetivo de que también lo visiten.</small></p>
               </div>
-                <figure class="projectViajes-imageContainer">
+                <figure class="project-imageContainer">
                     <a href="https://www.instagram.com/tv/BtPczTZh_ZX/" target="_blank"><img class="projectViajes-image"src="../Omar_Alvarez/Image_portafolio/viaje.png" width="500" height="300" alt="Imagen portafolio viajes"></a>
                 </figure>
             </article>
@@ -78,16 +84,28 @@
                 <p class="project-date"><small><strong>Fecha: </strong>16/09/2017</small></p>
                 <p class="project-place"><small><strong>Lugar: </strong>Centro de eventos, Autopista Norte, Bogotá</small></p>
               </div> 
-                <figure class="projectdj-imageContainer">
+                <figure class="project-imageContainer">
                      <a href="https://www.youtube.com/watch?v=rKc454n0EQg" target="_blank"><img class="projectdj-image" src="../Omar_Alvarez/FOTOS_ESTUDIO/IMG_OmarAlvarez.JPG" width="500" alt="Zion & Lenox amor y amistas 2017 Bogotá, Colombia"></a> 
                 </figure>      
           </article>
       </div>
     </section>
+    <section class="video" id="videos">
     <div class="container">
-        <h2 class="experience-title" id="experiencia">Mas sobre mi experiencia</h2>
+        <h2 class="experience-title" id="experiencia">Videos</h2>
     </div>
-      <section class="experience">
+    <div class="flexible-video container">
+          <!-- <video class="html-video" src="../PRIMERA_PAUTA_DIGITAL.mp4" width="1080" height="1920" controls></video> -->
+          <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/D7Hgl4La_zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="flexible-video container">
+    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/Ebnwe0vrVtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </section>
+    <div class="container">
+        <h2 class="experience-title" id="experiencia">Experiencia</h2>
+    </div>
+    <section class="experience">
         <div class="container">
             <article class="diplomas">
                 <div class="diplomas-detail">
@@ -161,11 +179,12 @@
             <button>Enviar</button>
           </form>
           <div class="social">
-            <a href="https://twitter.com/omaralvarezo" target="_blank" class="social-link twitter"></a>
-            <a href="https://www.facebook.com/omaralvarezort" target="_blank" class="social-link facebook"></a>
-            <a href="https://www.youtube.com/user/omabeto19" target="_blank" class="social-link youtube"></a>
-            <a href="https://www.instagram.com/omaralvarezo/" target="_blank" class="social-link instagram"></a>
-            <a href="https://github.com/omaralvarezo" target="_blank" class="social-link github"></a>
+            <a href="https://twitter.com/omaralvarezo" target="_blank" class="icon-twitter twitter-button"></a>
+            <a href="https://www.facebook.com/omaralvarezort" target="_blank" class="icon-facebook facebook-button"></a>
+            <a href="https://www.youtube.com/user/omabeto19" target="_blank" class="icon-youtube youtube-button"></a>
+            <a href="https://www.instagram.com/omaralvarezo/" target="_blank" class="icon-instagram instagram-button"></a>
+            <a href="https://github.com/omaralvarezo" target="_blank" class="icon-github github-button"></a>
+            <a href="https://www.linkedin.com/in/omar-alberto-alvarez-ortiz-965524155/" target="_blank" class="icon-linkedin linkedin-button"></a>
           </div>
       </div>
     </section>
@@ -179,5 +198,35 @@
             </div>
       </div>
     </footer>
+    <script>
+
+      const ipad = window.matchMedia('screen and (max-width: 767px)')
+      const menu = document.querySelector('.menu')
+      // console.log(menu)
+      const burgerButton = document.querySelector('#burger-menu')
+      // console.log(burgerButton)
+      
+
+      burgerButton.addEventListener('click', hideShow)
+      ipad.addListener(validation)
+
+
+      function validation(event){
+        if(event.matches){
+          burgerButton.addEventListener('click', hideShow)
+        }else{
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+      function hideShow(){
+        if(menu.classList.contains('is-active')){
+          menu.classList.remove('is-active')
+          
+        } else{
+          menu.classList.add('is-active')
+        }
+        validation(ipad)
+      }
+    </script>
   </body>
 </html>

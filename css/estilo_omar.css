@@ -19,6 +19,67 @@ body header div nav ol li a */
 /* /* selector de id # */
 /* #portafolio_audiovisual */
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icomoon/fonts/icomoon.eot?ejd7r7');
+  src:  url('../icomoon/fonts/icomoon.eot?ejd7r7#iefix') format('embedded-opentype'),
+    url('../icomoon/fonts/icomoon.ttf?ejd7r7') format('truetype'),
+    url('../icomoon/fonts/icomoon.woff?ejd7r7') format('woff'),
+    url('../icomoon/fonts/icomoon.svg?ejd7r7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e901";
+  color: white;
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-instagram:before {
+  content: "\e903";
+  color: white;
+}
+.icon-linkedin:before {
+  content: "\e904";
+  color: white;
+}
+.icon-soundcloud:before {
+  content: "\e905";
+  color: white;
+}
+.icon-twitter:before {
+  content: "\e906";
+  color: white;
+}
+.icon-youtube:before {
+  content: "\e907";
+  color: white;
+}
+.icon-menu:before {
+  content: "\e900";
+}
+
+
+
+
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0%;
@@ -62,10 +123,11 @@ h2  {
   /* background-size: 500px 300px ;
   background-repeat: no-repeat; */
   /* background-position-x: right; */
-  background-color: #1b2127;
+  background-color: #192028;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .hero-title{
   /* border: 1px solid red; */
@@ -108,54 +170,53 @@ h2  {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .project-title{
   font-size: 30px;
-  margin: 10px 0px;
+  margin-bottom: .3em;
 }
 
 .project-work,
 .project-implements,
 .proyect-event,
 .project-date,
-.project-place
+.project-place,
+.project-description
 {
-  margin: 10px 0;
+  margin: .3em 0;
 }
 
 .project-description{
   font-size: 20px;
-  margin: 20px 20px 20px 0;
 }
 .project strong{
   font-family: 'Fjalla One', sans-serif;
   font-weight: bold;
 }
 .project-details{
-  width: 500px;
+  width: 50%;
 }
-.projecDistrito-imageContainer{
-  width: 500px
+.project-imageContainer{
+  width: 50%;
+}
+.project-imageContainer img{
+  max-width: 100%;
 }
 .projectDistrito-image{
   object-fit: cover;
 }
-.projectViajes-imageContainer{
-  width: 500px;
-}
 .projectViajes-image{
   object-fit: cover;
 }
-.projectDJ-imageContainer{
-  width: 500px;
-}
 .header{
-  background-color: #1b2127;
+  background-color: #192028;
   color: white;
   display: flex;
   height: 70px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu{
@@ -191,9 +252,10 @@ figure{
 
 .footer{
   color: white;
-  background-color: #1b2127;
+  background-color: #192028;
   display: flex;
   justify-content: space-between ;
+  flex-wrap: wrap;
 }
 .footer a {
   color: white;
@@ -208,13 +270,32 @@ vertical-align: middle
 
 .experience{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 20px;
   margin: 20px 40px 40px 40px;
   background: #fafafa;
 }
+
+.youtube-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.flexible-video {
+    width: 100%;
+    height: 0;
+    padding-top:56.25%; 
+    position: relative;
+  }
+
+
 .diplomas {
-  margin: 10px;
+  margin: 1%;
+  width: 48%;
   overflow: hidden;
 }
 .diplomas-title{
@@ -222,6 +303,7 @@ vertical-align: middle
 }
 .diplomas img{
   width: 450px;
+  height: 350px;
   object-fit: cover;
 }
 .diplomas-figure{
@@ -245,35 +327,44 @@ vertical-align: middle
 }
 .diplomas-text a{
   text-decoration: none;
-  border: 1px solid #1b2127;
+  border: 1px solid #192028;
   border-radius: 5px;
   padding: 5px 20px;
-  color: #1b2127;
+  color: #192028;
 }
 
 
 .contact{
-  background-color: #1b2127;
+  background-color: #333;
   color: white;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1em 1em 1em;
 }
 
-.social-link{
-  display: inline-block;
+.social h3{
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.social{
+  padding: 0 0 10px 0;
+  /* display: inline-block;
   width: 50px;
   height: 50px;
-  background-size: 50px 50px;
+  background-size: 50px 50px; */
   margin: 0 10px;
 }
 
-.social-link.twitter{
-  background-image: url('../Omar_Alvarez/Image_portafolio/twitter.svg');
+/* .social-link.twitter{
+  background-image: url('../Omar_Alvarez/Image_portafolio/twitter.png');
 }
 .social-link.facebook{
-  background-image: url('../Omar_Alvarez/Image_portafolio/facebook.svg');
+  background-image: url('../Omar_Alvarez/Image_portafolio/facebook.png');
 }
 .social-link.youtube{
   background-image: url('../Omar_Alvarez/Image_portafolio/youtube.png');
@@ -283,7 +374,7 @@ vertical-align: middle
 }
 .social-link.github{
   background-image: url('../Omar_Alvarez/Image_portafolio/github.png')
-}
+} */
 
 .form-email input{
   border-color: gray;
@@ -310,11 +401,12 @@ vertical-align: middle
   font-family: 'Source Sans Pro', sans-serif;
 }
 .form-email{
-  margin: 0 10px;
+  margin: 10px 0;
 }
 .container{
   /* border: 1px solid red; */
-  width: 1000px;
+  max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -322,4 +414,293 @@ vertical-align: middle
   height: inherit;
   flex-wrap: inherit;
   flex-direction: inherit;
+}
+
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  /* display: flex;
+  aling-items: center;
+  justify-content: center;
+   */
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
+.twitter-button{
+  font-size: 35px;
+  text-decoration: none; 
+  padding: 0 10px;
+}
+.facebook-button{
+  font-size: 35px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.youtube-button{
+  font-size: 35px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.github-button{
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.linkedin-button{
+  font-size: 35px;
+
+  text-decoration: none;
+  padding: 0 10px;
+}
+.instagram-button{
+  font-size: 35px;
+  text-decoration: none;
+  padding: 0 10px;
+}
+/* Desktop first comenzar con el media mas grande */
+@media screen and (max-width: 1023px){
+  
+  .portafolio-portafolio,
+  .experience-title{
+    margin-left: 0;
+  }
+  
+  .portfolio_audiovisual,
+  .experience {
+    margin: 20px 0px 0px 0px;
+    padding:  1em 0;
+  }
+
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 2em;
+    z-index: 2;
+  }
+
+  .html-video {
+    width: 100%;
+    height: auto;
+  }
+.youtube-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+  .flexible-video {
+    width: 100%;
+    height: 0;
+    padding-top:56.25%; 
+    position: relative;
+  }
+  .form-email input{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .burger-button{
+  display: block;
+  }
+  h2{
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
+  .oalogo{
+    padding: .5em;
+  }
+  .header{
+    display: block;
+    height: auto;
+  }
+  .header ol{
+    display: block;
+  }
+  .header ol li{
+    height: 40px;
+  }
+  .header a{
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+  }
+  .header .logo{
+    text-align: center;
+  }
+  .menu{
+    position: fixed;
+    background-color: rgba(140, 198, 63, .9);
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    transition: 0.3s;
+    /* height: 100vh; */
+  }
+  .menu.is-active{
+    left: 0;
+  }
+
+  .portfolio_audiovisual,
+  .experience {
+    margin: 20px 10px 0px 10px;
+  }
+  .portafolio-portafolio,
+  .experience-title{
+    margin-left: 10px;
+  }
+
+  .project{
+    display: block;
+  }
+  .project-imageContainer{
+    width: auto;
+    text-align: center;
+  }
+  .project-details{
+    width: auto;
+    font-size: 16px;
+  }
+  .project-title{
+    font-size: 1.5em;
+  }
+  .project-url{
+    font-size: 1em;
+  }
+  .project-course{
+    font-size: 1em;
+  }
+  .project-date{
+    font-size: 1em;
+  }
+  .project-description{
+    font-size: 1em;
+  }
+
+
+  .diplomas{
+    width: auto;
+    flex-shrink: initial;
+    text-align: center;
+  }
+  .diplomas img{
+    width: 98%;
+    height: 95%;
+  }
+
+  .twitter-button{
+    font-size: 35px;
+    text-decoration: none; 
+    padding: 0 5px;
+  }
+  .facebook-button{
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+  .youtube-button{
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+  .github-button{
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+  .linkedin-button{
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+  .instagram-button{
+    font-size: 35px;
+    text-decoration: none;
+    padding: 0 5px;
+  }
+
+  .contact{
+    height: auto;
+    padding: 1.5em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .project-details{
+    width: auto;
+    font-size: 12px;
+  }
+
+  .diplomas-detail{
+    margin: 0.5em 0.5em;
+    padding: 1em;
+  }
+
+  .contact{
+    height: auto;
+    padding: 1.5em;
+    display: block;
+    text-align: center;
+  }
+  .form-email button{
+    /* este boton tiene un font-size de 11px por lo que su em sera de 11px */
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    /* padding: 1px; */
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (max-width: 320px){
+  h1 {
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, .2)
+  }
+  .hero{
+    padding: 2em 1em;
+  }
 }
