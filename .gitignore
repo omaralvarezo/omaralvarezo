@@ -1,0 +1,8 @@
+#imagenes
+*.jpg
+*.png
+*.jpeg
+*.svg
+
+#archivos
+*.pdf
