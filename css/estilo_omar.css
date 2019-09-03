@@ -496,6 +496,9 @@ vertical-align: middle
     right: 0;
     width: 100%;
   }
+  .hero img{
+    filter: opacity(35%);
+  }
   h1{
     font-size: 2em;
     z-index: 2;
